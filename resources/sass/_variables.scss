@@ -1,7 +1,43 @@
 // Body
-$body-bg: #f8fafc;
+$body-bg: #1A202C;
+$body-color: #EDF2F7;
+
+// Colors
+$primary: #00D4FF; // Electric Blue
+$secondary: #2D3748;
+$success: #48BB78;
+$info: #63B3ED;
+$warning: #F6E05E;
+$danger: #F56565;
+$light: #F7FAFC;
+$dark: #171923;
 
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 0.95rem;
+
+// Components
+$card-bg: #2D3748;
+$card-color: #EDF2F7;
+$card-border-color: rgba(255, 255, 255, 0.1);
+
+// Navbar
+$navbar-light-color: rgba(255, 255, 255, 0.7);
+$navbar-light-hover-color: #fff;
+$navbar-light-active-color: $primary;
+$navbar-light-brand-color: $primary;
+$navbar-light-brand-hover-color: lighten($primary, 10%);
+
+// Tables
+$table-color: $body-color;
+$table-bg: transparent;
+$table-border-color: rgba(255, 255, 255, 0.1);
+
+// Forms
+$input-bg: #2D3748;
+$input-color: #EDF2F7;
+$input-border-color: rgba(255, 255, 255, 0.2);
+$input-focus-bg: #232d3d;
+$input-focus-color: #fff;
+$input-focus-border-color: $primary;

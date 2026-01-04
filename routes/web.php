@@ -13,6 +13,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'a
 
 // Customer Routes
 Route::get('/', [\App\Http\Controllers\ProductController::class, 'index'])->name('products.index');
+Route::get('/products/{product}', [\App\Http\Controllers\ProductController::class, 'show'])->name('products.show');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/cart', [\App\Http\Controllers\CartController::class, 'index'])->name('cart.index');

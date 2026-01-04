@@ -12,4 +12,12 @@ class ProductController extends Controller
         $products = Product::active()->paginate(12);
         return view('products.index', compact('products'));
     }
+
+    public function show(Product $product)
+    {
+        if (!$product->is_active) {
+            abort(404);
+        }
+        return view('products.show', compact('product'));
+    }
 }

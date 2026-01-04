@@ -27,7 +27,7 @@ class ProductRequest extends FormRequest
             'name' => 'required|string|max:255|unique:products,name,' . $productId,
             'price' => 'required|numeric|min:0',
             'stock' => 'required|integer|min:0',
-            'amount' => 'nullable|integer', // Sometimes used as alias for stock
+
             'description' => 'nullable|string',
             'image_path' => 'nullable|image|max:12288', 
             'is_active' => 'boolean',
